@@ -1,0 +1,19 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  image: string,
+  title: string,
+  revert?: boolean
+}
+
+const { image, title, revert = false } = Astro.props
+---
+
+<asticle class={`relative grid md:flex place-items-center ${revert ? 'sm:flex-row-reverse' : 'sm:flex-row' } w-full bg-gray-100 rounded-md overflow-hidden`}>
+  <div class="bg-black h-full w-full absolute bg-opacity-70 md:hidden"></div>
+  <div class="font-bold text-3xl absolute text-slate-100 w-11/12 md:relative md:text-black md:text-4xl md:w-full md:flex md:justify-center">
+    <h1 class="md:w-4/5">{title}</h1>
+  </div>
+  <Image class="w-full md:w-1/2" src={image} alt="Mesa para comedor" width="600" height="600"/>
+</asticle>

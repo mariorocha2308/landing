@@ -1,0 +1,32 @@
+---
+import AppBar from "./AppBar.astro";
+
+---
+
+<section id="init" class="collage w-screen h-screen">
+  <div class="bg-black h-screen w-screen absolute bg-opacity-80"></div>
+  <div class="collage-item1"></div>
+  <div class="collage-item2"></div>
+  <div class="collage-item3"></div>
+  <div class="collage-item4"></div>
+  <div class="collage-item5"></div>
+  <div class="collage-item6"></div>
+  <div class="collage-item7"></div>
+  <div class="collage-item8"></div>
+
+  <AppBar/>
+
+  <aside class="flex flex-col gap-4 justify-center items-center absolute place-self-center w-screen p-5 text-white">
+    <h1 class="lg:text-8xl md:text-7xl text-6xl font-bold animate-pulse">Lorem & Ipsum</h1>
+    <h1 class="lg:text-2xl md:text-xl text-base font-semibold leading-tight">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</h1>
+    <a href="#order" class="mt-6 px-5 py-2.5 overflow-hidden group bg-[var(--secondary-color)] relative text-white transition-all ease-out duration-300 active:scale-90 rounded-full">
+      <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+      <span class="relative">Contactar</span>
+    </a>
+  </aside>
+
+  <aside class="flex flex-col gap-1 justify-center items-center absolute place-self-end w-screen p-5 text-white animate-pulse">
+    <h1 class="text-base">¡Deslice hacia arriba!</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+  </aside>
+</section>
