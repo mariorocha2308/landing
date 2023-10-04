@@ -32,13 +32,6 @@ _Below is an example of how you can instruct your audience on installing and set
    http://localhost:4321
    ```
 
-<!-- USAGE EXAMPLES -->
-## Deploy Page
-
-Vercel is my environment favorite to deploy websites  
-
-_Click it [page here](https://count-down-new-year.vercel.app/)_
-
 See the [open issues](https://github.com/mariorocha2308/landing/issues) for a full list of proposed features (and known issues).
 
 ## 👀 Want to learn more about astro?
